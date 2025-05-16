@@ -1,13 +1,13 @@
 package sh.okx.rankup.requirements;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import be.seeseemelk.mockbukkit.entity.PlayerMock;
 import org.bukkit.Statistic;
 import org.bukkit.entity.EntityType;
 import org.junit.jupiter.api.Test;
 import sh.okx.rankup.RankupTest;
 import sh.okx.rankup.ranks.Rank;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MobKillsRequirementsTest extends RankupTest {
 
@@ -25,6 +25,6 @@ public class MobKillsRequirementsTest extends RankupTest {
     Rank rank = plugin.getRankups().getFirst();
 
     assertEquals(3 - 2, rank.getRequirement(player, "mob-kills#snow_golem").getRemaining(player));
-    assertEquals(3 - 1, rank.getRequirement(player, "mob-kills#mushroom_cow").getRemaining(player));
+    assertEquals(3 - 1, rank.getRequirement(player, "mob-kills#mooshroom").getRemaining(player));
   }
 }
